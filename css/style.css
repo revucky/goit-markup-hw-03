@@ -50,8 +50,8 @@ ul {
 }
 
 .conteiner {
-  /* display: flex; */
-  max-width: 1200px;
+  display: flex;
+  width: 1200px;
   /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
@@ -149,6 +149,9 @@ ul {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+}
+.section {
+  display: flex;
 }
 
 .section-hero {
@@ -311,14 +314,6 @@ h1 {
   color: var(--text-white);
 }
 
-.section {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: silver;
-}
 .section-works {
   display: flex;
   flex-wrap: wrap;
