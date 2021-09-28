@@ -17,11 +17,21 @@
   --button-filter: #f5f4fa;
   --button-filter-text: #212121;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--text-white);
   color: var(--primery-text-color);
   letter-spacing: 0.03em;
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 .conteiner {
   display: flex;
