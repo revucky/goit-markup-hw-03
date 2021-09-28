@@ -33,10 +33,26 @@ body {
   font-family: Roboto, sans-serif;
   margin: 0;
 }
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .conteiner {
-  display: flex;
+  /* display: flex; */
   max-width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -62,9 +78,7 @@ body {
 .web {
   color: #2196f3;
 }
-ul {
-  list-style: none;
-}
+
 /* header */
 
 .site-nav .link {
@@ -124,19 +138,41 @@ ul {
 
 /* css studio */
 /* section */
-.section.no-padding {
+.title-studio {
+  color: var(--text-white);
+  background-color: #2f303a;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.section-hero {
+  text-align: center;
+}
+.section {
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 94px;
   margin-bottom: 0px;
+}
+
+.credo {
+  display: flex;
 }
 .section-title-feature {
   color: var(--text-title);
-  /* font-style: normal; */
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 .section .section-title {
   color: var(--text-title);
@@ -144,6 +180,28 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.section-team {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: var(--text-title);
+  /* outline: 2px solid pink; */
+  margin-top: 94px;
+  text-align: center;
+  background-color: var(--button-filter);
+}
+.section-team .section-title {
+  margin-bottom: 50px;
+}
+
+.title-hide {
+  display: none;
 }
 
 /* button */
@@ -214,19 +272,25 @@ ul {
 }
 
 /* portfolio settings */
+.section .section-button {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
 .section .button-filter {
   color: var(--button-filter-text);
   background-color: var(--button-filter);
   font-weight: 500;
   font-size: 16px;
+  margin-right: 8px;
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
 }
-.section .section-button {
-  display: flex;
-  margin-right: 8px;
-}
+
 .section .button-filter:focus,
 .section .button-filter:hover {
   background-color: var(--text-accent-hf);
@@ -246,16 +310,7 @@ ul {
 h1 {
   color: var(--text-white);
 }
-.title-studio {
-  color: var(--text-white);
-  background-color: #2f303a;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
+
 .section {
   width: 1200px;
   padding-left: 15px;
@@ -268,9 +323,9 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  margin-top: 0;
 }
 .flex {
   width: 370px;
   margin: 15px;
-  background-color: gold;
 }
