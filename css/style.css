@@ -16,6 +16,7 @@
   --mail-tel-footer: rgba(255, 255, 255, 0.6);
   --button-filter: #f5f4fa;
   --button-filter-text: #212121;
+  --header-border: #ececec;
 }
 html {
   box-sizing: border-box;
@@ -80,6 +81,9 @@ address {
   display: flex;
   align-items: center;
 }
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
 .site-nav {
   display: flex;
 }
@@ -88,7 +92,7 @@ address {
   margin-left: auto;
 }
 .logo {
-  color: #000000;
+  color: var(--text-title);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -97,11 +101,11 @@ address {
   margin-right: 93px;
 }
 .web {
-  color: #2196f3;
+  color: var(--text-accent-hf);
 }
 
 .site-nav .link {
-  color: #212121;
+  color: var(--text-title);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -140,7 +144,7 @@ address {
 }
 
 .contact .link {
-  color: #757575;
+  color: var(--primery-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -156,12 +160,13 @@ address {
 /* hero */
 .section-hero {
   text-align: center;
-  padding: 200px;
+  padding: 200px 0;
+  background-color: var(--color-bcg);
 }
 
 .title-studio {
   color: var(--text-white);
-  background-color: var(--color-bcg);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -180,8 +185,6 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  margin-left: 600px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -329,6 +332,19 @@ address {
 .section .button-filter {
   color: var(--button-filter-text);
   background-color: var(--button-filter);
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+}
+.button-current {
+  background-color: var(--text-accent-hf);
+  color: var(--text-white);
   font-weight: 500;
   font-size: 16px;
   margin-right: 8px;
