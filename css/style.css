@@ -17,6 +17,9 @@
   --button-filter: #f5f4fa;
   --button-filter-text: #212121;
   --header-border: #ececec;
+  --card-set-gap: 30px;
+  --card-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 html {
   box-sizing: border-box;
@@ -60,6 +63,10 @@ a {
 
 address {
   font-style: normal;
+}
+img {
+  display: block;
+  min-width: 100%;
 }
 
 .conteiner {
@@ -290,6 +297,9 @@ address {
 .team-item {
   background-color: var(--text-white);
   margin-right: 30px;
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
 }
 .team-item:last-child {
   margin-right: 0;
@@ -313,6 +323,10 @@ address {
   margin-bottom: 30px;
 }
 
+.card {
+  /* box-shadow: var(--card-shadow);
+  border-radius: 10px; */
+}
 .title-hide {
   display: none;
 }
@@ -385,6 +399,8 @@ address {
 }
 .flex {
   width: 370px;
-  margin: 15px;
-  border: 1px solid rgba(238, 238, 238, 1);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid var(--header-border);
 }
