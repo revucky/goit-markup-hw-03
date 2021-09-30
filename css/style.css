@@ -245,8 +245,8 @@ img {
   text-decoration: none;
   margin-bottom: 9px;
 }
-.footer a:focus,
-.footer a:hover {
+.footer .link:focus,
+.footer .link:hover {
   color: var(--text-accent-hf);
 }
 .conteiner.footer {
